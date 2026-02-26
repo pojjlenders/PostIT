@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title><%= post.title %></title>
+</head>
+<body>
+    <h1><%= post.title %></h1>
+    <img src="<%= post.imageUrl %>" style="max-width: 600px; display: block;">
+    
+    <p><strong>Descrizione:</strong> <%= post.description %></p>
+    <p><strong>Info Extra:</strong> <%= post.extraInfo %></p>
+    <p><small>Pubblicato il: <%= post.createdAt %></small></p>
+    
+    <hr>
+    <a href="/postGallery">Torna alla Gallery</a>
+</body>
+</html>

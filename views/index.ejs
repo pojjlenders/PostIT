@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Crea Post</title>
+</head>
+<body>
+    <h1>Nuovo Post</h1>
+    <form action="/post" method="POST">
+        <input type="text" name="title" placeholder="Titolo del post" required><br><br>
+        
+        <textarea name="description" placeholder="Descrizione del post"></textarea><br><br>
+        
+        <input type="text" name="imageUrl" placeholder="Incolla URL immagine (es. https://...)" required><br><br>
+        
+        <input type="text" name="extraInfo" placeholder="Informazioni aggiuntive"><br><br>
+        
+        <button type="submit">Pubblica nella Gallery</button>
+    </form>
+    <br>
+    <a href="/postGallery">Guarda la Gallery</a>
+</body>
+</html>
